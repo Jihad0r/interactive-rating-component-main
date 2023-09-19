@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    margin: 0;
+    color: hsl(216, 12%, 54%);
+    font-family: sans-serif;
+}
+@media(max-width:990px) {
+    .main {
+        margin: 0 10px 0 10px;
+    }
+}
+
+.front {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 40px;
+    margin: auto;
+    transform: translate(0%, 50%);
+}
+
+.front img {
+    background-color: hsl(216, 12%, 8%);
+    padding: 20px 20px;
+    border-radius: 100%
+}
+
+h1 {
+    color: white;
+    margin: 20px 0 20px 0;
+}
+
+.front ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+.front ul li {
+    list-style: none;
+    background-color: hsl(216, 12%, 8%);
+    padding: 20px 25px;
+    border-radius: 100%;
+}
+
+.active {
+    background-color: hsl(216, 23%, 32%) !important;
+    color: white !important;
+}
+
+.front ul li:hover {
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.front p {
+    max-width: 354px;
+    line-height: 25px;
+}
+
+.front button {
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.front button:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+    cursor: pointer;
+}
+
+.back {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+    transform: translate(0%, 50%);
+}
+
+.hidden {
+    display: none;
+}
+
+.back .text {
+    max-width: 354px;
+    line-height: 25px;
+}
+
+.back .icon+p {
+    color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+    background-color: hsl(216, 12%, 8%);
+    padding: 12px 23px;
+    margin: 10px 50px 10px 50px;
+}
+
+.attribution {
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    margin: 200px auto;
+    padding: 10px;
+}
